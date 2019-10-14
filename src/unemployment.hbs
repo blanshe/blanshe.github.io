@@ -1,0 +1,69 @@
+---
+headline: "Unemployment in U.S States"
+subhead: "In this project I examine U.S states that registered highest and lowest unemployment rates in the first half of 2019. I went ahead to graph nonfarm labor productivity among U.S states."
+published_date: "Octocer 12, 2019"
+site: "http://www.littlecolumns.com"
+siteName: "Little Columns"
+url: "http://littlecolumns.com/learn/d3-javascript-tooling/"
+kicker: "DATA JOURNALISM"
+author:
+    name: " MUSINGUZI BLANSHE"
+    url: "http://jonathansoma.com/"
+    twitterHandle: "@dangerscarf"
+analytics": ""
+---
+<!-- 
+  This line means, use default.hbs layout from src/html/layouts/
+-->
+
+{{!< default}}
+
+<div class="story-body">
+    <p>Every month, President Trump brag about historical unemployment rates in the USA arguing that his administration deserves more credit than it receives for reducing unemployment.</p>
+    <p>Clustering states in groups of five states that had highest unemployment rate and states that had lowest unemployment rate, this article track states that registered highest unemployment reduction.</p>
+    <p>I sorted data and picked states that had highest and lowest unemployment from January to June. Highest unemployment: Alaska, District of Columbia, West Virginia, New Mexico and Arizona were the states with highest unemployment rates. But West Virginia stood out. Why? It registered a significant unemployment rate reduction from 5.2 to 4.4 percent.</p>
+
+
+</div>
+
+<!-- 
+  Put some content into an .hbs file inside of /partials, 
+  and you can just throw it in anywhere!
+-->
+
+<!-- 
+  Charts are exactly the same.
+-->
+
+<div class="story-body">
+<iframe title="Unemployment in US states in First Half of 2019" aria-label="Stacked Bars" id="datawrapper-chart-t9s7l" src="//datawrapper.dwcdn.net/t9s7l/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1326"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+
+</div>
+
+<div class="story-body">
+    <p>The cluster of states that had lowest uneployment rates were; Hawaii, North Dakota, Vermont, New Hampshire, Iowa were the states with lowest unemployment rate. Vermont stood out in this cluster because its unemployment rate went down from 2.5 to 2.1 percent.</p>
+    <p>Unemployment in Iowa was static for the first half of 2019. The rate went up in Hawaii from February to June. The rate went up in New Hampshire in June. Unemployment went down in North Dakota in January and February but remained static during the four months that followed.</p>
+
+</div>
+<!-- 
+  If you want to use something exported from ai2html...
+    1. Rename the exported .html file to .hbs
+    2. Put the .hbs file inside of 'html/story'
+    3. Move the exported images to the images folder
+    4. Include the partial normally like below
+  -->
+
+{{> story/templates5 }}
+
+<!--
+  You can also put the actual HTML here if you really want to,
+  although it's a little less organized looking
+-->
+
+<div class="story-body">
+    <p>I analyzed 2017-16 nonfarm labor productivity in U.S states from a Bureau of Labor Statistics data set. Montana had the highest productivity and Arkansas the lowest.</p>
+</div>
+
+<div class="story-body">
+<iframe title="&amp;nbsp;Labour Productivity in USA states&amp;nbsp;" aria-label="Interactive line chart" id="datawrapper-chart-b14YI" src="//datawrapper.dwcdn.net/b14YI/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+</div>

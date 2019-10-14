@@ -1,0 +1,67 @@
+---
+headline: "Birth and Fertility Rate in U.S"
+subhead: "Using data from Center for Disease Control and Prevention (CDC), I visualize a 35yrs trend of birth and fertility rate in U.S."
+published_date: "October 13, 2019"
+site: "http://www.littlecolumns.com"
+siteName: "Little Columns"
+url: "http://littlecolumns.com/learn/d3-javascript-tooling/"
+kicker: "DATA JOURNALISM"
+author:
+    name: "MUSINGUZI BLANSHE"
+    url: "http://jonathansoma.com/"
+    twitterHandle: "@dangerscarf"
+analytics": ""
+---
+<!-- 
+  This line means, use default.hbs layout from src/html/layouts/
+-->
+
+{{!< default}}
+
+<!-- 
+  Put some content into an .hbs file inside of /partials, 
+  and you can just throw it in anywhere!
+-->
+<div class="story-body">
+    <p>The U.S. birth rate is now at its lowest point in 30 years, according to National Vital Statistics Rapid Release report. Vast media reports focused on what will be the likely impacts of this rate but I focus on how birth rate has been falling among racial groups</p>
+    <p>The birth rate has been falling among all race groups, but far more among American-Indian-Alaska natives. They had the highest rate in 1980 but by 2015, they had the lowest birth rate.</p>
+    <h2>Birth Rate from 1980 to 2015</h2>
+
+
+</div>
+
+
+
+<!-- 
+  Charts are exactly the same.
+-->
+{{> story/templates01 }}
+
+<div class="story-body">
+    <p>This means, fertility rate, a key determinant of birth rate has also been scaling down. Once again, fertility rate has been on the downward trend but far more among American-Indian-Alaska natives than other race groups.</p>
+    <p>Demographers Christine Percheski and Sarah Cannon in a 2012 paper argued that falling among American-Indian-Alaska could be explained by time to time variation of Americans who identify themselves with this racial group.</p>
+    <p>“A high proportion of individuals who identify as AI/AN at one point in time change racial identification between census years; fewer than one-third of people who included an AI/AN identification in 2000 or 2010 had the same race and ethnicity responses in both of those censuses. It is possible that changes in the composition of the self-identified AI/AN population are related to changes in fertility,” they argued.</p>
+    <p>They also argued that there may be a real change in fertility among American Indians. “The AI/AN population had relatively high fertility for decades and a decline could signify a shift toward convergence with the fertility patterns of other racial and ethnic groups. Alternatively, a sharp decline in period fertility could reflect changes in fertility timing or marriage behavior across cohorts, possibly because of changes in educational attainment, economic circumstances, or migration from rural areas (including reservations) to cities.”</p>
+
+</div>
+
+<!-- 
+  If you want to use something exported from ai2html...
+    1. Rename the exported .html file to .hbs
+    2. Put the .hbs file inside of 'html/story'
+    3. Move the exported images to the images folder
+    4. Include the partial normally like below
+  -->
+
+<div class="story-body">
+<iframe title="A 35yrs&amp;nbsp; fertility rate trend in U.S&amp;nbsp;" aria-label="Interactive area chart" id="datawrapper-chart-MbTEy" src="//datawrapper.dwcdn.net/MbTEy/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script></div>
+
+<!--
+  You can also put the actual HTML here if you really want to,
+  although it's a little less organized looking
+-->
+
+<div class="story-body">
+    <h2>Here is some body copy</h2>
+    <p>I can put code in <code>src/index.hbs</code> directly, but it's nicer to put it in a partial.</p>
+</div>
