@@ -63,14 +63,24 @@ img {
 /* text styles */
 
 p.kicker {
-    font-size:1rem;
+    font-size:2rem;
     text-transform:uppercase;
+    color: #c51b8a;
 }
 
 .text-center {
     text-align:center;
 }
 
+p.bio {
+    font-size:1rem;
+    text-transform:lowercase;
+    color: #31a354;
+}
+
+.text-center {
+    text-align:center;
+}
 h1.headline {
     font-size: 4rem;
     line-height: 1.1;
@@ -223,5 +233,4 @@ p.caption {
     .photo {
         padding:0;
     }
-
 }
