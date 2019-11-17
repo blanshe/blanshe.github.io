@@ -59,6 +59,21 @@ img {
     margin-right:auto;
 }
 
+.project-container {
+    max-width: 46rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flexbox;
+}
+
+.project {
+    max-width: 15rem;
+    display: flex;
+    border: 1px gray solid;
+    float: left;
+    padding: 8px;
+}
+
 
 /* text styles */
 
@@ -74,7 +89,6 @@ p.kicker {
 
 p.bio {
     font-size:1rem;
-    text-transform:lowercase;
     color: #31a354;
 }
 
@@ -211,7 +225,6 @@ p.caption {
     font-size:0.9rem;
     margin:0;
 }
-
 
 
 /* mobile */

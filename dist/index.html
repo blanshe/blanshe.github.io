@@ -37,29 +37,39 @@
 <body>
   <!-- The headline area pulls most of its content from data/meta.json -->
   <div class="header">
-      <p class="kicker">Inside Data</p>
-      <h1 class="headline"></h1>
+      <p class="kicker">Data</p>
+      <h1 class="headline">MUSINGUZI BLANSHE</h1>
       <h2 class="subhead"></h2>
       <p class="byline">
               MUSINGUZI BLANSHE
       </p>
-      <p class="date">Published </p>
   </div>
 
   <main id="content">
 
-    <!-- 
-  This line means, use default.hbs layout from src/html/layouts/
--->
-<p class="bio">A Ugandan and Master of Science in Data Journalism (2020) student at Columbia University.<br>Former politics and business reporter at <a href="https://ugandaradionetwork.com/a/user.php?u=3894">Uganda Radio Network.</a><br>Brefore, I was a reporter at Uganda's <a href="https://www.monitor.co.ug/page/search/DailyMonitor/691150-691150-view-asSearch-m0nqyo/index.html">Daily Monitor.</a></p>
+    <div class="story-body">
+
+  <!-- 
+    This line means, use default.hbs layout from src/html/layouts/
+  -->
+  <p class="bio">A Ugandan and Master of Science in Data Journalism (2020) student at Columbia University.<br>Former politics and business reporter at <a href="https://ugandaradionetwork.com/a/user.php?u=3894">Uganda Radio Network.</a><br>Brefore, I was a reporter at Uganda's <a href="https://www.monitor.co.ug/page/search/DailyMonitor/691150-691150-view-asSearch-m0nqyo/index.html">Daily Monitor.</a></p>
 
 
-<p><a href="/birth.html">Birth rate</a></p>
-
-<p><a href="/unemployment.html">Unemployment in US</a></p>
-
-<p><a href="/trade.html">China and US trade flow with Afrca</a></p>
-
+  <div class="container">
+    <div class="project">
+    <p><a href="/birth.html">Birth rate</a>: The birth rate has been falling among all race groups, but far more among American-Indian-Alaska natives</p>
+    <p><img src="/birth.1c855fac.png"></p>
+    </div>
+        <div class="project">
+    <p><a href="/unemployment.html">Unemployment in US</a>: President Trump keeps boosting about lowering unemployment. But how has the rate in the first half of the year across the states?</p>
+      <p><img src="/top.9a364590.png"></p>
+      </div>
+      <div class="project">
+    <p><a href="/trade.html">China and US trade flow with Afrca</a>:The surge in China-Africa trade volume has been bolstered by export credit facilitation that Africa importers receive from Chinese government owned banks</p>
+    <p><img src="/export.41641a71.png"></p>
+    </div>
+  </div>
+</div>
 
 <!-- 
   Put some content into an .hbs file inside of /partials, 

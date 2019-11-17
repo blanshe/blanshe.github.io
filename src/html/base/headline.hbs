@@ -9,5 +9,7 @@
             {{ author.name }}
         {{/if}}
     </p>
-    <p class="date">Published {{ published_date }}</p>
+    {{#if published_date }}
+        <p class="date">Published {{ published_date }}</p>
+    {{/if}}
 </div>
