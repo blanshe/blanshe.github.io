@@ -61,17 +61,33 @@ img {
 
 .project-container {
     max-width: 46rem;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: flexbox;
 }
 
 .project {
-    max-width: 15rem;
+    width: 45%;
     display: flex;
+    padding: 0 8px;
     border: 1px gray solid;
     float: left;
     padding: 8px;
+    align-items: center;
+    margin: 15px;
+    vertical-align: top;
+    display: table-cell;
+    height: 450px;
+}
+
+.project > .headline {
+    text-align: center;
+}
+
+.project > * {
+    width: 100%;
+    display: inline-block;
 }
 
 
