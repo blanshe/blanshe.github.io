@@ -21,16 +21,7 @@ const svg = d3
 
 // const colorScale = d3
 //   .scaleOrdinal()
-//   .range([
-//     '#8dd3c7',
-//     '#ffffb3',
-//     '#bebada',
-//     '#fb8072',
-//     '#80b1d3',
-//     '#fdb462',
-//     '#b3de69',
-//     '#fccde5'
-//   ])
+//   .range([['#ffffb2', '#fecc5c', '#fd8d3c', '#f03b20', '#bd0026']])
 
 const colorScale = d3.scaleSequential(d3.interpolateCividis)
 
@@ -54,7 +45,7 @@ function ready(json) {
   const ratsExtent = d3.extent(
     states.features.map(d => +d.properties.Incidents)
   )
-  colorScale.domain(ratsExtent.reverse())
+  colorScale.domain(ratsExtent)
 
   // call tips
   const tip = d3

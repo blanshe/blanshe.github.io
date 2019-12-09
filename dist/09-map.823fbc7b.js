@@ -36415,7 +36415,7 @@ function ready(_ref) {
     //   .attr('fill', 'grey')
     //   .attr('stroke', 'black')
     svg.selectAll('.state') // .data(datapoints)
-    .attr('class', 'state').attr('fill', 'grey');
+    .attr('class', 'state').attr('fill', '#bdbdbd');
   });
   d3.select('#second-step').on('stepin', function () {
     // svg
@@ -36432,7 +36432,7 @@ function ready(_ref) {
       if (d.Unique < 100) {
         return colorScale(d.Unique);
       } else {
-        return 'grey';
+        return '#bdbdbd';
       }
     }).raise();
   });
@@ -36451,7 +36451,7 @@ function ready(_ref) {
       if (d.Unique < 1000) {
         return colorScale(d.Unique);
       } else {
-        return 'grey';
+        return '#bdbdbd';
       }
     }).raise();
   });
@@ -36470,7 +36470,7 @@ function ready(_ref) {
       if (d.Unique < 2000) {
         return colorScale(d.Unique);
       } else {
-        return 'grey';
+        return '#bdbdbd';
       }
     }).raise();
   });
@@ -36489,7 +36489,7 @@ function ready(_ref) {
       if (d.Unique > 3000 && d.Unique < 4000) {
         return colorScale(d.Unique);
       } else {
-        return 'grey';
+        return '#bdbdbd';
       }
     }).raise();
   });
@@ -36508,7 +36508,7 @@ function ready(_ref) {
       if (d.Unique > 4000) {
         return colorScale(d.Unique);
       } else {
-        return 'grey';
+        return '#bdbdbd';
       }
     }); // .raise()
   });
