@@ -1,5 +1,5 @@
 # Rats Compalaints in New York 
-In this project, I am using the New York rat complaints database to visualize the rate at which New Yorkers complain of rats in their area. This (https://data.cityofnewyork.us/Social-Services/Rat-Sightings/3q43-55fe) data-set was created in 2010 and it has entries such as date of sight, zip code, borough, latitude, longitude, among. My draft story is (https://blanshe.github.io/rats.html)
+In this project, I am using the New York rat complaints database to visualize the rate at which New Yorkers complain of rats in their area. This (https://data.cityofnewyork.us/Social-Services/Rat-Sightings/3q43-55fe) data-set was created in 2010 and it has entries such as date of sight, zip code, borough, latitude, longitude, among. My draft story is (https://blanshe.netlify.com/rats.html)
 
 # What patterns I am I looking for?
 In data analysis (https://github.com/blanshe/NY-RATS/blob/master/rat_in_NY/Rat_in_NY.ipynb, I am looking at patterns such as aggregate reported complaints per borough, varriance in borough complaints per year, varriance in zip codes per year, aggregate complaints per zip code, among others. 
