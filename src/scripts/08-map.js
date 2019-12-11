@@ -19,11 +19,12 @@ const svg = d3
   .append('g')
   .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
-// const colorScale = d3
-//   .scaleOrdinal()
-//   .range([['#ffffb2', '#fecc5c', '#fd8d3c', '#f03b20', '#bd0026']])
+const colorScale = d3
+  .scaleOrdinal()
+  .domain(['0', '50000'])
+  .range(['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99'])
 
-const colorScale = d3.scaleSequential(d3.interpolateCividis)
+// const colorScale = d3.scaleSequential(d3.interpolateCividis)
 
 const projection = d3
   .geoTransverseMercator()
@@ -45,7 +46,7 @@ function ready(json) {
   const ratsExtent = d3.extent(
     states.features.map(d => +d.properties.Incidents)
   )
-  colorScale.domain(ratsExtent)
+  // colorScale.domain(ratsExtent)
 
   // call tips
   const tip = d3

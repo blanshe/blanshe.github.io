@@ -36337,11 +36337,9 @@ var margin = {
 };
 var height = 500 - margin.top - margin.bottom;
 var width = 600 - margin.left - margin.right;
-var svg = d3.select('#chart-8').append('svg').attr('height', height + margin.top + margin.bottom).attr('width', width + margin.left + margin.right).append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')'); // const colorScale = d3
-//   .scaleOrdinal()
-//   .range([['#ffffb2', '#fecc5c', '#fd8d3c', '#f03b20', '#bd0026']])
+var svg = d3.select('#chart-8').append('svg').attr('height', height + margin.top + margin.bottom).attr('width', width + margin.left + margin.right).append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+var colorScale = d3.scaleOrdinal().domain(['0', '50000']).range(['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99']); // const colorScale = d3.scaleSequential(d3.interpolateCividis)
 
-var colorScale = d3.scaleSequential(d3.interpolateCividis);
 var projection = d3.geoTransverseMercator().rotate([76 + 35 / 60, -40]).translate([width / 2], height / 2); // out geoPath needs a PROJECTION variable
 
 var path = d3.geoPath().projection(projection);
@@ -36355,8 +36353,8 @@ function ready(json) {
   console.log(states);
   var ratsExtent = d3.extent(states.features.map(function (d) {
     return +d.properties.Incidents;
-  }));
-  colorScale.domain(ratsExtent); // call tips
+  })); // colorScale.domain(ratsExtent)
+  // call tips
 
   var tip = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function (d) {
     // return `<span style='color:red'>${+d.properties.Incidents}</span>`
